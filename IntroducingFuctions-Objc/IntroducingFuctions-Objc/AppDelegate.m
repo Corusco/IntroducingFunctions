@@ -32,10 +32,8 @@
 void printIntroductions(NSString *name, NSString *funcJapaneseName){
     
     //string variables introduction and japanese introduction. Enjoy unicode support.
-    NSString *introduction;
-    NSString *japaneseIntroduction;
-    introduction = [NSString stringWithFormat:@"My name is %@.", name];
-    japaneseIntroduction = [funcJapaneseName stringByAppendingString:@"と申します。よろしくお願いします。"];
+    NSString *introduction = [NSString stringWithFormat:@"My name is %@.", name];
+    NSString *japaneseIntroduction = [funcJapaneseName stringByAppendingString:@"と申します。よろしくお願いします。"];
     
     //log introductions
     NSLog(@"%@",introduction);
